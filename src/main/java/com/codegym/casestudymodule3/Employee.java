@@ -2,19 +2,26 @@ package com.codegym.casestudymodule3;
 
 import java.util.Date;
 
-public class Order {
+public class Employee {
     int id;
-    String name;
-    int price;
-    String customerName;
-    Date orderDate;
+    String fullName;
+    String email;
+    String phone;
+    String address;
 
-    public Order(int id, String name, int price, String customerName, Date orderDate) {
+    public Employee(String fullName, String email, String phone, String address) {
+        this.fullName = fullName;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+    }
+
+    public Employee(int id, String fullName, String email, String phone, String address) {
         this.id = id;
-        this.name = name;
-        this.price = price;
-        this.customerName = customerName;
-        this.orderDate = orderDate;
+        this.fullName = fullName;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
     }
 
     public int getId() {
@@ -25,35 +32,35 @@ public class Order {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
-    public int getPrice() {
-        return price;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public Date getOrderDate() {
-        return orderDate;
+    public String getAddress() {
+        return address;
     }
 
-    public void setOrderDate(Date orderDate) {
-        this.orderDate = orderDate;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
